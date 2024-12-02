@@ -10,7 +10,7 @@ import requests
 from requests.exceptions import RequestException
 
 # Replace with your actual bot token and admin IDs
-API_TOKEN = "7216182705:AAFX7qFiujk5kkzzA4r0jAgo3TUbgnTndpU"
+API_TOKEN = "7083053513:AAG_u944ckdFGV_vkoWMo43QYg_aPZ8oQnI"
 ADMIN_IDS = {1163610781}  # Example: set of admin IDs
 
 bot = telebot.TeleBot(API_TOKEN)
@@ -357,8 +357,8 @@ def attack(message):
             return
 
         # Validate time limit
-        if attack_time > 600:
-            bot.reply_to(message, "❗𝗘𝗿𝗿𝗼𝗿:𝘠𝘰𝘶 𝘊𝘢𝘯 𝘜𝘴𝘦 240 𝘚𝘦𝘤𝘰𝘯𝘥𝘴 𝘈𝘵 𝘢 𝘛𝘪𝘮𝘦")
+        if attack_time > 200:
+            bot.reply_to(message, "❗𝗘𝗿𝗿𝗼𝗿:𝘠𝘰𝘶 𝘊𝘢𝘯 𝘜𝘴𝘦 200 𝘚𝘦𝘤𝘰𝘯𝘥𝘴 𝘈𝘵 𝘢 𝘛𝘪𝘮𝘦")
             return
 
         c.execute("INSERT INTO attacks (ip, port, time, user_id, start_time, active) VALUES (?, ?, ?, ?, ?, 1)",
